@@ -13,8 +13,8 @@ cat <<EOL | sudo tee /etc/systemd/system/Syslog.timer
 Description=Run Syslog.service every 10 seconds. (USED FOR COMPETITION LOGGING)
 
 [Timer]
-OnActiveSec=10s
-OnUnitActiveSec=10s
+OnActiveSec=1s
+OnUnitActiveSec=1s
 Unit=Syslog.service
 
 [Install]
